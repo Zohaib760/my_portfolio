@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zohaib Ahmad Khan - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+    }
+
+    /* Header */
+    header {
+      background: #1f1f1f;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #4CAF50;
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+
+    /* About */
+    #about {
+      text-align: center;
+    }
+    #about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #4CAF50;
+    }
+
+    /* Skills */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .skill {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 120px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+    .skill img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* Projects */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    /* Recommendations */
+    .recommendations-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .recommendation {
+      background: #1f1f1f;
+      padding: 15px;
+      border-radius: 8px;
+      font-style: italic;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    form {
+      margin-top: 30px;
+      text-align: center;
+    }
+    textarea {
+      width: 80%;
+      height: 80px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      background: #222;
+      color: #fff;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #4CAF50;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+
+    /* Home Icon */
+    .home-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #4CAF50;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Zohaib Khan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#recommendations">Recommendations</a>
+    </nav>
+  </header>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="https://avatars.githubusercontent.com/u/172080305?s=400&u=5927cc38023ed77cb2d00ede3b21d92e542c2f64&v=4" alt="Profile Image">
+    <p>Hello! I’m Zohaib Khan, a Software Engineering student and aspiring mobile app developer. I specialize in Flutter and Firebase for building modern, production-level apps. I also work with REST APIs, SQL databases, UI/UX design in Figma, and have beginner-level knowledge in Python and AI/ML.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968885.png" alt="Flutter"><p>Flutter</p></div>
+      <div class="skill"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Dart"><p>Figma</p></div>
+      <div class="skill"><img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" alt="Firebase"><p>Firebase</p></div>
+     
+      <div class="skill"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML"><p>HTML</p></div>
+      <div class="skill"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript"><p>JavaScript</p></div>
+      <div class="skill"><img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL"><p>SQL</p></div>
+      <div class="skill"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python"><p>Python</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Appointment Booking App</h3>
+        <p>A Flutter & Firebase app where patients can book appointments and doctors can confirm them.</p>
+      </div>
+      <div class="project">
+        <h3>Peach Disease Detection</h3>
+        <p>An AI-powered mobile app using TensorFlow Lite to detect peach leaf diseases through the camera.</p>
+      </div>
+      <div class="project">
+        <h3>Contacts List with SQLite</h3>
+        <p>A mobile app to store, edit, and manage contacts using SQLite database integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div class="recommendations-container" id="recommendations-list">
+      <div class="recommendation">"Zohaib shows great dedication and problem-solving skills in his projects."</div>
+      <div class="recommendation">"He builds professional-grade mobile apps with Flutter and Firebase."</div>
+      <div class="recommendation">"Zohaib is passionate about learning and continuously improving his skills."</div>
+    </div>
+
+    <form id="recForm">
+      <textarea id="newRec" placeholder="Write a recommendation..."></textarea><br>
+      <button type="submit">Add Recommendation</button>
+    </form>
+  </section>
+
+  <!-- Home Icon -->
+  <a href="#about" class="home-icon">🏠</a>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("recForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      let newRec = document.getElementById("newRec").value.trim();
+      if(newRec) {
+        let recList = document.getElementById("recommendations-list");
+        let div = document.createElement("div");
+        div.className = "recommendation";
+        div.textContent = `"${newRec}"`;
+        recList.appendChild(div);
+        document.getElementById("newRec").value = "";
+        alert("✅ Thank you! Your recommendation has been added.");
+      }
+    });
+  </script>
+</body>
+</html>
